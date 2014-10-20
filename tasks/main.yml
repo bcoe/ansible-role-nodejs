@@ -5,8 +5,7 @@
 
 - name: add 'chris-lea' PPA for Node.js
   sudo: true
-  validate_certs: no
-  apt_repository: repo=ppa:chris-lea/node.js
+  apt_repository: repo=ppa:chris-lea/node.js validate_certs=no
 
 - name: install package
   sudo: true
